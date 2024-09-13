@@ -27,9 +27,8 @@ app.post("/signup", (req, resp) => {
             email: email,
             password: password
         });
-
-        data.save();
         
+        data.save();
         resp.send({
             status: 200,
             message: "data send successfully",
